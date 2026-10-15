@@ -1,0 +1,6 @@
+mujoco
+mink
+numpy
+qpsolvers
+robot_descriptions
+matplotlib
