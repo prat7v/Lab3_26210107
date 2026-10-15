@@ -9,3 +9,21 @@ Tutorial 4 implementation for the Franka Emika Panda robot.
 - **QP-IK** — custom quadratic program with joint-limit constraints
 
 ## Structure
+src/
+environment.py          # Scene (table, cube, tray, EE site)
+mink_controller.py      # Mink wrapper
+ik_dls.py               # Damped least squares
+ik_qp.py                # QP formulation
+scripts/
+run_mink_pickplace.py   # Generalised Mink runner
+run_dls_pickplace.py    # Generalised DLS runner
+run_qp_pickplace.py     # Generalised QP runner
+report/
+Franka_Pick_Place_Report.docx
+
+## Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
